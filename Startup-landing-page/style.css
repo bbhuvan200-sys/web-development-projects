@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: #0f172a;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background: linear-gradient(120deg, #667eea, #764ba2);
+  color: white;
+}
+
+.hero img {
+  width: 45%;
+  border-radius: 12px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+}
+
+.hero button {
+  padding: 12px 25px;
+  border: none;
+  background: #ffb703;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* ABOUT */
+.about {
+  padding: 60px;
+  text-align: center;
+}
+
+/* SERVICES */
+.services {
+  background: #f4f6f8;
+  padding: 60px;
+}
+
+.service-box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service {
+  background: white;
+  padding: 30px;
+  width: 250px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service img {
+  width: 60px;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  background: #0f172a;
+  color: white;
+  padding: 40px;
+}
+
+.stats h3 {
+  font-size: 30px;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 60px;
+  background: #667eea;
+  color: white;
+}
+
+.cta button {
+  padding: 12px 25px;
+  border: none;
+  background: white;
+  color: #333;
+  font-size: 16px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #0f172a;
+  color: white;
+}
