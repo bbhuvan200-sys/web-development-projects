@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ShopKart | E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<!-- HEADER -->
+<header>
+  <h1>ShopKart</h1>
+  <button onclick="toggleCart()">🛒 Cart (<span id="cart-count">0</span>)</button>
+</header>
+
+<!-- PRODUCTS -->
+<section class="products">
+
+  <div class="product">
+    <div class="img-box">
+      <img src="images/product1.jpg">
+    </div>
+    <h3>Wireless Headphones</h3>
+    <p class="price">₹1999</p>
+    <button onclick="addToCart('Wireless Headphones',1999)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="img-box">
+      <img src="images/product2.jpg">
+    </div>
+    <h3>Smart Watch</h3>
+    <p class="price">₹2999</p>
+    <button onclick="addToCart('Smart Watch',2999)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="img-box">
+      <img src="images/product3.jpg">
+    </div>
+    <h3>Laptop</h3>
+    <p class="price">₹59999</p>
+    <button onclick="addToCart('Laptop',59999)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="img-box">
+      <img src="images/product4.jpg">
+    </div>
+    <h3>Camera</h3>
+    <p class="price">₹34999</p>
+    <button onclick="addToCart('Camera',34999)">Add to Cart</button>
+  </div>
+
+</section>
+
+<!-- CART / CHECKOUT -->
+<div class="cart" id="cart">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <span class="close-btn" onclick="toggleCart()">✖</span>
+  </div>
+
+  <div id="cart-items"></div>
+  <h3>Total: ₹<span id="total">0</span></h3>
+
+  <button class="buy" onclick="checkout()">Buy Now</button>
+  <button class="cancel" onclick="clearCart()">Cancel Order</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
